@@ -1,24 +1,32 @@
-﻿<link rel="stylesheet" href="~/css/LobbyCSS/Lobby.css"/>
+﻿
+
+
+<link rel="stylesheet" href="~/css/Game/Game.css" />
 <section class="gameSection">
-    <article class="readySection">
-       <button class="FirstPlayerReady" disabled>Ready</button>
-        <button class="SecondPlayerReady" disabled>Ready</button>
-    </article>
     <article>
+        <section>
+            <button id="StartGame" disabled>Start Game</button>
+        </section>
         <table class="gameTable">
             @for (int i = 0; i < 3; i++)
             {
                 <tr>
                     @for (int j = 0; j < 3; j++)
                     {
-                        <td><button disabled></button></td>
+                        <td><button  disabled></button></td>
                     }
                 </tr>
             }
         </table>
     </article>
 
+    <article class="chatArticle">
+        <div>
+            <ul id="chatUl">
+            </ul>
+        </div>
+    </article>
 </section>
 
 <script src="~/microsoft/signalR/dist/browser/signalr.js"></script>
-<script src="~/js/LobbyJs/LobbyJs.js"></script>
+<script src="~/js/Game/Game.js"></script>
