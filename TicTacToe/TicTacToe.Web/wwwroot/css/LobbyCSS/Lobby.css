@@ -1,52 +1,35 @@
-﻿main {
-padding-top: 20px;
-width: 50%;
-border: 4px ridge black;
-border-radius: 20px;
+﻿.gameSection {
+    padding: 40px;
+    display: flex;
+    margin: top 40px;;
 }
-.container>main {
-    width: 75%;
+.gameTable {
+    flex-basis: 50%;
 }
-.commentSection {
-    height: 700px;
-    max-height: 700px;
+.gameTable>tbody>tr>td {
+    border:2px solid black;
+    width: 100px;
+    height: 100px;
 }
-main>section>ul {
-    margin: 0%;
-    padding-left: 0%;
-}
-main>section>ul>li {
+.gameTable>tbody>tr>td>button {
+    border:none;
     width: 100%;
-    margin-left:0px;
-    background: lightpink;
-    list-style-type: none;
-    border-radius: 15px;
-    border: 4px ridge red;
-}
-.commentSection>article {
-    position: relative;
-    display: inline-block;
-    top: 636px;
-    width: 100%;
-}
-.commentSection>article>textarea {
-    border-radius: 8px;
-    height: 80px;
-    resize: none;
-width: 90%;
-display:inline-block;
-border: 4px ridge;
+    height: 100%;
 }
 
-.commentSection>article>button {    
-display:inline-block;
-position:relative;
-bottom: 34px;
-width:75px;
-height: 80px;
-padding: 0%;
-border: 0%;
-margin: 0ch;
-background-color:limegreen;
-color:white;
+.readySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 200px;
+}
+.firstPlayerReady  {
+align-self: flex-start;
+height: 20px;
+}
+
+.secondPlayerReady { 
+    align-self: flex-end;
+    flex-basis: 20px;
 }

@@ -16,12 +16,12 @@ namespace TicTacToe.Web.Hubs
             var user = this.Context.User.FindFirst(ClaimTypes.NameIdentifier).Value;
             await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
-        public override async Task OnConnectedAsync()
-        {
-            var user = this.Context.User.FindFirst(ClaimTypes.Name).Value;
-            var message = $"{user} has joined lobby.";
-            await Clients.All.SendAsync("ReceiveMessage", user, message);
-        }
+        //public override async Task OnConnectedAsync()
+        //{
+        //    var user = this.Context.User.FindFirst(ClaimTypes.Name).Value;
+        //    var message = $"{user} has joined lobby.";
+        //    await Clients.All.SendAsync("ReceiveMessage", user, message);
+        //}
     }
 }
 
