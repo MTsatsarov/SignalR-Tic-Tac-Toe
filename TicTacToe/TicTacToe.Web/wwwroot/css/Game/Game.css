@@ -2,7 +2,11 @@
 .gameSection {
     padding: 40px;
     display: flex;
+<<<<<<< HEAD:TicTacToe/TicTacToe.Web/wwwroot/css/Game/Game.css
     margin: 40px;
+=======
+    margin: top 40px;
+>>>>>>> 43121bebebb6fed3d945b4cd722130c4dd7a8523:TicTacToe/TicTacToe.Web/wwwroot/css/LobbyCSS/Lobby.css
     justify-content: space-between;
 }
 .gameTable {
